@@ -20,7 +20,7 @@ def endPointDocumentation(request):
             'Endpoint': '/district/id',
             'method': 'GET',
             'body': None,
-            'description': 'Returns a single District object with all Actions of PUT,PATCH,DELETE'
+            'description': 'Returns a single District object with all methods of PUT,PATCH,DELETE'
         },
         {
             'Endpoint': '/sectors/',
@@ -32,7 +32,19 @@ def endPointDocumentation(request):
             'Endpoint': '/sector/id',
             'method': 'GET',
             'body': None,
-            'description': 'Returns a single Sector object with all Actions of PUT,PATCH,DELETE'
+            'description': 'Returns a single Sector object with all methods of PUT,PATCH,DELETE'
+        },
+        {
+            'Endpoint': '/restaurants/',
+            'method': 'GET',
+            'body': None,
+            'description': 'returns array of all Restaurants'
+        },
+        {
+            'Endpoint': '/restaurant/id',
+            'method': 'GET',
+            'body': None,
+            'description': 'Returns a single Restaurant object with all methods of PUT,PATCH,DELETE'
         },
     ]
     return Response(routes)

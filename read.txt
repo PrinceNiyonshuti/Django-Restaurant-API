@@ -1,0 +1,21 @@
+requirements
+
+- python -m venv env
+- activate env ( env\Scripts\activate.bat )
+- pip install django
+- pip install djangorestframework
+- pip install pillow
+- django-admin startproject [project name] .
+- python manage.py startapp [appName]
+- register app in project settings
+- python manage.py migrate
+- python manage.py createsuperuser
+    username: admin
+    password: password@123
+- python manage.py runserver
+-
+
+Deploying steps
+- add Procfile
+- make requirements by pip freeze > requirements.txt
+

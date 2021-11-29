@@ -46,6 +46,30 @@ def endPointDocumentation(request):
             'body': None,
             'description': 'Returns a single Restaurant object with all methods of PUT,PATCH,DELETE'
         },
+        {
+            'Endpoint': '/dishCategories/',
+            'method': 'GET',
+            'body': None,
+            'description': 'returns array of all Dish Categories'
+        },
+        {
+            'Endpoint': '/dishCategory/id',
+            'method': 'GET',
+            'body': None,
+            'description': 'Returns a single Dish Category object with all methods of PUT,PATCH,DELETE'
+        },
+        {
+            'Endpoint': '/dishes/',
+            'method': 'GET',
+            'body': None,
+            'description': 'returns array of all Dishes'
+        },
+        {
+            'Endpoint': '/dish/id',
+            'method': 'GET',
+            'body': None,
+            'description': 'Returns a single Dish object with all methods of PUT,PATCH,DELETE'
+        },
     ]
     return Response(routes)
 

@@ -16,6 +16,6 @@ requirements
 -
 
 Deploying steps
+- install these requirements ( pip install psycopg2 gunicorn django-heroku whitenoise )
 - add Procfile
 - make requirements by pip freeze > requirements.txt
-
